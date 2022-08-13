@@ -1,0 +1,129 @@
+@import "../fonts/fonts.css";
+
+body{
+	  font-family: 'Nunito';
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    color: #2E2E2E;
+    padding: 10px 20px;
+}
+
+.btn-primary{
+	background: #B9270B;
+border-radius: 30px;
+border-color: #B9270B;
+    padding: 10px 18px;
+}
+.btn-primary:hover{
+	background: #333;
+border-color: #333;
+}
+.carousel-caption {
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    right: 0;
+    text-align: left;
+    max-width: 1130px;
+    margin: 0 auto;
+    bottom: auto;
+    z-index: 3;
+    padding: 0 15px;
+}
+.carousel-caption h5{
+font-weight: 500;
+font-size: 16px;
+letter-spacing: 0.3em;
+margin-bottom: 0px;
+}
+.carousel-item:after{
+	content: "";
+	background-color: #000;
+	opacity: 0.4;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+.carousel-caption h4{
+font-weight: 900;
+font-size: 70px;
+line-height: 84px;
+letter-spacing: 0.05em;
+ font-family: 'Avenir LT Std';
+ position: relative;
+ text-transform: uppercase;
+}
+.carousel-caption h4:after{
+	content: "";
+	background-image: url('../images/logosmall.svg');
+	position: absolute;
+	left: 0;
+	top:-62px;
+	width: 153px;
+height: 154px;
+z-index: -1;
+}
+.carousel-caption p{
+font-weight: 600;
+font-size: 20px;
+max-width: 540px;
+margin-bottom:50px;
+}
+.carousel-caption a{
+	min-width: 164px;
+}
+.footer{
+	background: #1B6B89;
+	 padding:  40px 0;
+}
+.carousel-indicators {
+    right: 0;
+    left: 0;
+    top: 50%;
+    bottom: auto;
+    transform: translate(0, -50%);
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+     padding: 0 15px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    margin: 0;
+    position: relative;
+    opacity: 1;
+}
+.carousel-indicators [data-bs-target].active {
+	background-color: rgb(255 255 255 / 40%);
+}
+.carousel-indicators [data-bs-target]:not(:last-child):after {
+    content: "";
+    width: 1px;
+    height: 10px;
+    background: #fff;
+    position: absolute;
+    right: 6px;
+    top: 16px;
+    opacity: 1;
+}
+
+@media only screen and (min-width: 1200px) {
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0 40px;
+  
+}
+}
