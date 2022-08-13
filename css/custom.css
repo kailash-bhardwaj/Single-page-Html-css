@@ -17,6 +17,7 @@ body{
 border-radius: 30px;
 border-color: #B9270B;
     padding: 10px 18px;
+    min-width: 170px;
 }
 .btn-primary:hover{
 	background: #333;
@@ -119,7 +120,135 @@ margin-bottom:50px;
     top: 16px;
     opacity: 1;
 }
-
+.sectionmain{
+    padding: 50px 0;
+}
+.sectionmain h5{
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+letter-spacing: 0.3em;
+color: #B9270B;
+}
+.sectionmain h2{
+    font-family: 'Avenir LT Std';
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 38px;
+    color: #000000;
+    
+    }
+    .sectionmain ul{
+        margin: 30px 0;
+        list-style: none;
+        padding-left: 20px;
+    }
+    .sectionmain ul li{
+    font-weight: 500;
+font-size: 17px;
+line-height: 25px;
+color: #000000;
+margin-bottom: 10px;
+position: relative;
+    }
+    .sectionmain ul li::after{
+        content: "";
+        width: 8px;
+        height: 8px;
+        background: #B9270B;
+        position: absolute;
+    left: -20px;
+    border-radius: 100%;
+    top: 10px;
+        ;
+    }
+.sectionmain table{
+    margin-top: 50px;
+}
+.sectionmain table th{
+    background: #1B6B89;
+    color: #fff;
+    text-align:center;
+}
+.sectionmain table td{
+    text-align:center;
+}
+.aboutimg img{
+    border-radius: 30px;
+    box-shadow: -15px 15px 0px #1b6b89;
+    position: relative;
+    min-width: 100%;
+}
+.aboutimglarge{
+    position: relative;
+}
+.aboutimgsmall {
+    position: absolute;
+    bottom: -20px;
+    left: -90px;
+}
+.aboutimglarge h2 {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    color: rgb(255 255 255 / 38%);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 36px;
+    font-family: 'Nunito';
+}
+.aboutimg p {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
+}
+.aboutimgsmall img{
+    box-shadow: -15px 15px 0px #B9270B;
+border-radius: 27px;
+}
+.aboutsection{
+background-image: url(../images/logobg.svg);
+background-position: bottom left;
+background-repeat: no-repeat;
+background-size: 280px;
+}
+.copyright{
+    background: #175E79;
+    font-weight: 400;
+font-size: 13px;
+letter-spacing: 0.05em;
+padding:15px;
+text-align: center;
+color: #fff;
+}
+.footer ul{
+    list-style-type: none;
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+.footer ul li a{
+    font-weight: 400;
+font-size: 15px;
+line-height: 20px;
+letter-spacing: 0.05em;
+color: #fff;
+text-decoration: none;
+padding: 10px 30px;
+}
+.footer ul.social li:not(:last-child){
+    margin-right: 15px;
+}
+.footer ul.social li a{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2684A8;
+}
 @media only screen and (min-width: 1200px) {
 
 .navbar-expand-lg .navbar-nav .nav-link {
