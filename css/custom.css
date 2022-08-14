@@ -123,7 +123,7 @@ margin-bottom:50px;
     opacity: 1;
 }
 .sectionmain{
-    padding: 50px 0;
+    padding: 80px 0;
 }
 .sectionmain h5{
 font-weight: 500;
@@ -131,6 +131,7 @@ font-size: 16px;
 line-height: 22px;
 letter-spacing: 0.3em;
 color: #B9270B;
+text-transform: uppercase;
 }
 .sectionmain h2{
     font-family: 'Avenir LT Std';
@@ -196,7 +197,7 @@ position: relative;
     color: rgb(255 255 255 / 38%);
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 36px;
+    font-size: 50px;
     font-family: 'Nunito';
 }
 .aboutimg p {
@@ -271,14 +272,20 @@ color: #FFFFFF;
     border-color: #ffffff;
     padding: 10px 18px;
     min-width: 257px;
-    color: #B9270B;
+    color: #000;
+}
+.btn-white:hover {
+    background: #000;
+    border-color: #000;
+    color: #fff;
 }
 .serviceboxs{
     background: #FFFFFF;
     box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     overflow: hidden;
-    margin-bottom: 20px;
+    max-width: 390px;
+    margin: 0 auto 30px;
 }
 .serviceboxs figure{
 margin: 0;
@@ -297,6 +304,21 @@ margin: 0;
 .serviceboxs figcaption ul{
     list-style: 0;
     padding: 0;
+}
+.contactsec{
+background: #F5F5F5;
+}
+.contactsec .sectionmain{
+    padding: 30px;
+    
+}
+.contactright {
+    max-width: 530px;
+}
+.contactimg img {
+    object-fit: cover;
+    min-width: 100%;
+    height: 100%;
 }
 .serviceboxs figcaption ul li{ 
     display: inline-block;
@@ -349,10 +371,52 @@ top: 10px;
 .gallery .carousel-item:after{
     display: none;
 }
+.aboutimg {
+    padding-left: 50px;
+}
 @media only screen and (min-width: 1200px) {
 
 .navbar-expand-lg .navbar-nav .nav-link {
     padding: 0 40px;
   
+}
+}
+
+@media only screen and (max-width: 1400px) {
+    .aboutimglarge h2 {
+        font-size: 26px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .aboutimgsmall {
+        max-width: 108px;
+    }
+    }
+@media only screen and (max-width: 992px) {
+    .container{
+        max-width: 100%;
+    }
+    .sectionmain {
+        padding: 30px 0;
+    }
+    .aboutimg {
+        max-width: 600px;
+        margin: 20px auto;
+    }    
+    .contactright {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .sectionmain h2, .servicebox h2 {
+        font-size: 28px;
+    }
+    .aboutimg {
+        padding-left: 110px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+.footer ul li {
+    width: 100%;
 }
 }
