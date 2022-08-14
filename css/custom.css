@@ -97,6 +97,7 @@ margin-bottom:50px;
     flex-direction: column;
     align-items: flex-end;
      padding: 0 15px;
+     z-index: 5;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -106,9 +107,10 @@ margin-bottom:50px;
     margin: 0;
     position: relative;
     opacity: 1;
+    background-color: rgb(255 255 255 / 40%);
 }
 .carousel-indicators [data-bs-target].active {
-	background-color: rgb(255 255 255 / 40%);
+	background-color: #fff;
 }
 .carousel-indicators [data-bs-target]:not(:last-child):after {
     content: "";
@@ -248,6 +250,104 @@ padding: 10px 30px;
     align-items: center;
     justify-content: center;
     background: #2684A8;
+}
+.servicebox{
+    background: #B9270B;
+    padding: 50px 0 130px;
+    margin-bottom: -100px;
+    background-image: url(../images/servicebg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.servicebox h2{
+    font-weight: 800;
+font-size: 40px;
+line-height: 55px;
+color: #FFFFFF;
+}
+.btn-white {
+    background: #ffffff;
+    border-radius: 30px;
+    border-color: #ffffff;
+    padding: 10px 18px;
+    min-width: 257px;
+    color: #B9270B;
+}
+.serviceboxs{
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.serviceboxs figure{
+margin: 0;
+}
+.serviceboxs figure img{
+    min-width: 100%;
+}
+.serviceboxs figcaption{
+    padding: 10px;
+}
+.serviceboxs figcaption h2{
+    font-weight: 700;
+font-size: 26px;
+margin: 0;
+}
+.serviceboxs figcaption ul{
+    list-style: 0;
+    padding: 0;
+}
+.serviceboxs figcaption ul li{ 
+    display: inline-block;
+    position: relative;
+    padding: 0 10px 0 15px;
+    font-weight: 500;
+font-size: 16px;
+}
+.serviceboxs figcaption ul li::after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #B9270B;
+    position: absolute;
+left: 0px;
+border-radius: 100%;
+top: 10px;
+}
+.gallery{
+    background-image: url(../images/gallerybg.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.gallery .carousel-indicators {
+    transform: none;
+    flex-direction: row;
+    top: auto;
+    bottom: -20px;
+    align-items: center;
+    justify-content: center;
+}
+.gallery .carousel-indicators [data-bs-target].active{
+    background-color: #B9270B;
+    margin: 5px;
+}
+.gallery .carousel-indicators [data-bs-target]{
+    background-color: rgb(185 40 11 / 30%);
+    margin: 5px;
+}
+.gallery .carousel-indicators [data-bs-target]:after{
+    display: none;
+}
+.gallery h2{
+    margin-bottom: 50px;
+}
+.gallery img{
+    margin-bottom: 20px;
+    min-width: 100%;
+}
+.gallery .carousel-item:after{
+    display: none;
 }
 @media only screen and (min-width: 1200px) {
 
